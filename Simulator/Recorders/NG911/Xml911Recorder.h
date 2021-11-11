@@ -24,7 +24,7 @@ public:
 
    ~Xml911Recorder();
 
-   static IRecorder* Create() { return new Xml911Recorder(); }
+   static Recorder* Create() { return new Xml911Recorder(); }
 
    /// Init radii and rates history matrices with default values
    virtual void initDefaultValues() override;

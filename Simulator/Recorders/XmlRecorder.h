@@ -20,7 +20,7 @@
 #include "IRecorder.h"
 #include "Model.h"
 
-class XmlRecorder : public IRecorder {
+class XmlRecorder : public Recorder {
 public:
    /// constructor
    XmlRecorder();
@@ -28,7 +28,7 @@ public:
    /// destructor
    ~XmlRecorder();
    
-   static IRecorder* Create() { return new XmlRecorder(); }
+   static Recorder* Create() { return new XmlRecorder(); }
 
    /// Initialize data
    /// Create a new xml file.

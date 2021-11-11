@@ -20,9 +20,9 @@
 class Model;
 class AllVertices;
 
-class IRecorder {
+class Recorder {
 public:
-   virtual ~IRecorder() {}
+   virtual ~Recorder() {}
 
    /// Initialize data
    ///

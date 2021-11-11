@@ -34,14 +34,14 @@ using namespace H5;
 #define H5_FLOAT PredType::NATIVE_DOUBLE
 #endif
 
-class Hdf5Recorder : public IRecorder {
+class Hdf5Recorder : public Recorder {
 public:
    /// THe constructor and destructor
    Hdf5Recorder();
 
    ~Hdf5Recorder();
 
-   static IRecorder* Create() { return new Hdf5Recorder(); }
+   static Recorder* Create() { return new Hdf5Recorder(); }
 
    /// Initialize data
    ///

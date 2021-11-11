@@ -42,7 +42,7 @@ public:
 
    ~Hdf5GrowthRecorder();
 
-   static IRecorder* Create() { return new Hdf5GrowthRecorder(); }
+   static Recorder* Create() { return new Hdf5GrowthRecorder(); }
 
    /// Init radii and rates history matrices with default values
    virtual void initDefaultValues() override;

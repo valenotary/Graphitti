@@ -27,7 +27,7 @@ using namespace std;
 
 class Connections;
 
-class IRecorder;
+class Recorder;
 
 class Layout;
 
@@ -43,7 +43,7 @@ public:
 
    shared_ptr<Layout> getLayout() const;
 
-   shared_ptr<IRecorder> getRecorder() const;
+   shared_ptr<Recorder> getRecorder() const;
 
    /// Writes simulation results to an output destination.
    /// Downstream from IModel saveData()
@@ -94,7 +94,7 @@ protected:
 
    shared_ptr<Layout> layout_;
 
-   shared_ptr<IRecorder> recorder_;
+   shared_ptr<Recorder> recorder_;
 
    // shared_ptr<ISInput> input_;    /// Stimulus input object.
 

@@ -182,4 +182,4 @@ shared_ptr<Layout> Model::getLayout() const { return layout_; }
 /// Get the IRecorder class object.
 /// @return Pointer to the IRecorder class object. 
 // ToDo: make smart ptr
-shared_ptr<IRecorder> Model::getRecorder() const { return recorder_; }
+shared_ptr<Recorder> Model::getRecorder() const { return recorder_; }

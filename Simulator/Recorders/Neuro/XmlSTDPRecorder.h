@@ -44,7 +44,7 @@ public:
 
    ~XmlSTDPRecorder();
 
-   static IRecorder* Create() { return new XmlSTDPRecorder(); }
+   static Recorder* Create() { return new XmlSTDPRecorder(); }
 
    /**
     * Init radii and rates history matrices with default values

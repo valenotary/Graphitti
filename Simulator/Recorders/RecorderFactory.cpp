@@ -41,8 +41,8 @@ void RecorderFactory::registerClass(const string &className, CreateFunction func
 
 
 /// Creates concrete instance of the desired recorder class.
-shared_ptr<IRecorder> RecorderFactory::createRecorder(const string &className) {
-   recorderInstance = shared_ptr<IRecorder>(invokeCreateFunction(className));
+shared_ptr<Recorder> RecorderFactory::createRecorder(const string &className) {
+   recorderInstance = shared_ptr<Recorder>(invokeCreateFunction(className));
    return recorderInstance;
 }
 
@@ -50,7 +50,7 @@ shared_ptr<IRecorder> RecorderFactory::createRecorder(const string &className) {
 ///
 /// The calling method uses this retrieval mechanism in
 /// value assignment.
-IRecorder *RecorderFactory::invokeCreateFunction(const string &className) {
+Recorder *RecorderFactory::invokeCreateFunction(const string &className) {
    for (auto i = createFunctions.begin(); i != createFunctions.end(); ++i) {
       if (className == i->first)
          return i->second();

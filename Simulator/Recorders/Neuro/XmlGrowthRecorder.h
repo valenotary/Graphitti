@@ -29,7 +29,7 @@ public:
 
    ~XmlGrowthRecorder();
 
-   static IRecorder* Create() { return new XmlGrowthRecorder(); }
+   static Recorder* Create() { return new XmlGrowthRecorder(); }
 
    /// Init radii and rates history matrices with default values
    virtual void initDefaultValues() override;

@@ -28,7 +28,7 @@ public:
    }
 
    // Invokes constructor for desired concrete class
-   shared_ptr<IRecorder> createRecorder(const string &className);
+   shared_ptr<Recorder> createRecorder(const string &className);
 
    /// Delete these methods because they can cause copy instances of the singleton when using threads.
    RecorderFactory(RecorderFactory const &) = delete;
@@ -39,10 +39,10 @@ private:
    RecorderFactory();
 
    /// Pointer to neurons instance
-   shared_ptr<IRecorder> recorderInstance;
+   shared_ptr<Recorder> recorderInstance;
 
    /// Defines function type for usage in internal map
-   typedef IRecorder *(*CreateFunction)(void);
+   typedef Recorder *(*CreateFunction)(void);
 
    /// Defines map between class name and corresponding ::Create() function.
    typedef map<string, CreateFunction> RecorderFunctionMap;
@@ -51,7 +51,7 @@ private:
    RecorderFunctionMap createFunctions;
 
    /// Retrieves and invokes correct ::Create() function.
-   IRecorder *invokeCreateFunction(const string &className);
+   Recorder *invokeCreateFunction(const string &className);
 
    /// Register neuron class and it's create function to the factory.
    void registerClass(const string &className, CreateFunction function);
