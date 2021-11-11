@@ -17,7 +17,7 @@
 
 #include <fstream>
 
-#include "IRecorder.h"
+#include "Recorder.h"
 #include "Model.h"
 
 class XmlRecorder : public Recorder {

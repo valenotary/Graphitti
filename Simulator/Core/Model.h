@@ -21,7 +21,7 @@
 
 #include "Layout.h"
 #include "AllVertices.h"
-#include "IRecorder.h"
+#include "Recorder.h"
 
 using namespace std;
 

@@ -14,7 +14,7 @@
  */
 
 #include "Model.h"
-#include "IRecorder.h"
+#include "Recorder.h"
 #include "Connections.h"
 #include "ConnGrowth.h"
 #include "ParameterManager.h"
@@ -179,7 +179,7 @@ shared_ptr<Connections> Model::getConnections() const { return connections_; }
 // ToDo: make smart ptr
 shared_ptr<Layout> Model::getLayout() const { return layout_; }
 
-/// Get the IRecorder class object.
-/// @return Pointer to the IRecorder class object. 
+/// Get the Recorder class object.
+/// @return Pointer to the Recorder class object. 
 // ToDo: make smart ptr
 shared_ptr<Recorder> Model::getRecorder() const { return recorder_; }

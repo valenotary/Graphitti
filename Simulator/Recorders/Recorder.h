@@ -1,9 +1,9 @@
 /**
- * @file IRecorder.h
+ * @file Recorder.h
  *
  * @ingroup Simulator/Recorders
  *
- * @brief An interface for recording spikes history
+ * @brief A base class for Recorders
  */
 
 #pragma once

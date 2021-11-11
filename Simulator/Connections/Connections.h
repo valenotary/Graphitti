@@ -32,7 +32,7 @@
 #include "AllSpikingNeurons.h"
 #include "AllSpikingSynapses.h"
 #include "Layout.h"
-#include "IRecorder.h"
+#include "Recorder.h"
 #include "EdgeIndexMap.h"
 
 using namespace std;

@@ -13,7 +13,7 @@
 #include <string>
 
 #include "Global.h"
-#include "IRecorder.h"
+#include "Recorder.h"
 
 using namespace std;
 
