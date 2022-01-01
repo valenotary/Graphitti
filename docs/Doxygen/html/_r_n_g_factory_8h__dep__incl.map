@@ -1,0 +1,5 @@
+<map id="Simulator/Utils/RNG/RNGFactory.h" name="Simulator/Utils/RNG/RNGFactory.h">
+<area shape="rect" id="node1" title="A factory class for creating RNG objects." alt="" coords="125,5,266,47"/>
+<area shape="rect" id="node2" href="$_simulator_8cpp.html" title="Platform independent base class for the Brain Grid simulator. Simulator is a singleton class (a class..." alt="" coords="5,102,196,129"/>
+<area shape="rect" id="node3" href="$_r_n_g_factory_8cpp.html" title="A factory class for creating RNG objects." alt="" coords="221,95,362,136"/>
+</map>
